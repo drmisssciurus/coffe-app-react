@@ -1,15 +1,17 @@
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
 import './App.scss'
+import PreHeader from './components/PreHeader/PreHeader';
+import Header from './components/Header/Header';
 
 function App() {
 
   return (
     <>
-      <h1>Hello</h1>
-      <h2>world</h2>
+      <PreHeader />
+			<Header />
     </>
   )
 }
 
-export default App
+export default App;
