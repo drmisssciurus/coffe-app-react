@@ -2,12 +2,13 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding-inline: 35px;
+	padding-inline: 20px;
+	border-bottom: 1px solid black;
 }
 
 .wrapper {
 	display: flex;
-	gap: 35px;
+	gap: 47px;
 	align-items: center;
 }
 
@@ -15,7 +16,29 @@
 	padding-block: 30px;
 }
 
+.item {
+	position: relative;
+  display: flex;
+  align-items: center;
+	text-align: center;
+	&::before {
+		content: '';
+    position: absolute;
+		width: 54px;
+		height: 3px;
+		background-image: url('/src/assets/underline.svg');
+		background-position: center;
+		background-repeat: no-repeat;
+		bottom: -3px;
+		left: -4px;
+	}
+}
+
 .login {
 	border: none;
 	background-color: transparent;
+	border-left: 1px solid black;
+	padding: 20px;
+	padding-right: 0;
+
 }
