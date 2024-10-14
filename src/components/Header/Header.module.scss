@@ -1,9 +1,11 @@
+@import "/src/App.scss";
+
 .header {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	padding-inline: 20px;
-	border-bottom: 1px solid black;
+	border-bottom: 1px solid $color-dark;
 }
 
 .wrapper {
@@ -37,7 +39,7 @@
 .login {
 	border: none;
 	background-color: transparent;
-	border-left: 1px solid black;
+	border-left: 1px solid $color-dark;
 	padding: 20px;
 	padding-right: 0;
 

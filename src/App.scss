@@ -6,6 +6,8 @@
 	box-sizing: border-box;
 }
 
+$color-dark: black;
+
 img {
 	vertical-align: middle;
 	object-fit: cover;
@@ -14,12 +16,12 @@ img {
 
 a {
 	text-decoration: none;
-	color: black;
+	color: $color-dark;
 }
 
 body {
 	font-family: 'Open Sans', sans-serif;
-	color: black;
+	color: $color-dark;
 }
 
 ul,
