@@ -1,0 +1,19 @@
+.banner {
+	background-image: url('/src/assets/banner-bg.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 752px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	border-block: 1px solid black;
+}
+
+.title {
+	color: white;
+	font-size: 110px;
+	margin: 0 auto;
+	font-weight: 900;
+	font-family: "Anton", sans-serif;
+}

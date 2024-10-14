@@ -4,7 +4,8 @@ import './App.scss'
 import PreHeader from './components/PreHeader/PreHeader';
 import Header from './components/Header/Header';
 import HeroSwiper from './components/HeroSwiper/HeroSwiper';
-import AfterHeader from './components/AfterHeader/AfterHeader';
+// import AfterHeader from './components/AfterHeader/AfterHeader';
+import Banner from './components/Banner/Banner';
 
 function App() {
 
@@ -13,7 +14,7 @@ function App() {
       <PreHeader />
 			<Header />
 			<HeroSwiper />
-			<AfterHeader />
+			<Banner />
     </>
   )
 } 
