@@ -18,8 +18,6 @@ function AfterHeader() {
 							key={i}
 						> 						
 							{item} 
-						
-						{ i }
 						</div>
 					);
 				})

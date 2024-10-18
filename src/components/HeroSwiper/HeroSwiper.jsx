@@ -12,16 +12,39 @@ function HeroSwiper() {
 			modules={[Navigation, Mousewheel]}
 			className="mySwiper"
 			scrollbar={{ draggable: true }}
-			mousewheel={true}
+			// mousewheel={true}
 			slidesPerView={1}
 		>
-			{[1, 2, 3, 4, 5, 6].map((_, i) => {
-        return (
-					<SwiperSlide key={i}>
-						<div className={styles.wrapper}> Slide {i + 1} </div>
-					</SwiperSlide>
-				);
-      })}
+			<SwiperSlide>
+				<div className={styles.wrapper}> 
+					<div>
+						<img className={styles.image} src="/src/assets/hero-img.png" alt="Coffe and juice" />
+					</div>
+					<div className={styles.info}>
+						<h1 className={styles.title}>enjoy <br /> life sip <br /> by sip</h1>
+					</div>
+				</div>
+			</SwiperSlide>
+			<SwiperSlide>
+				<div className={styles.wrapper}> 
+					<div className={styles.image}>
+					<img className={styles.image} src="/src/assets/slider-2.jpg" alt="Coffe and juice" />
+					</div>
+					<div className={styles.info}>
+						<h1 className={styles.title}>your <br /> best of <br /> choice</h1>
+					</div>
+				</div>
+			</SwiperSlide>
+			<SwiperSlide>
+			<div className={styles.wrapper}> 
+					<div className={styles.image}>
+					<img className={styles.image} src="/src/assets/slider-3.jpg" alt="Coffe and juice" />
+					</div>
+					<div className={styles.info}>
+						<h1 className={styles.title}>For your <br /> work <br /> flow</h1>
+					</div>
+				</div>
+			</SwiperSlide>
 		</Swiper>
 	)
 }
