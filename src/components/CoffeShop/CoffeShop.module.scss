@@ -1,0 +1,28 @@
+@import "/src/App.scss";
+
+.wrapper {
+	display: grid;
+	grid-template-columns: 3fr 1fr;
+	gap: 20px;
+}
+
+.image {
+	border-radius: 5px;
+}
+
+.information {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 20px;
+}
+
+.infowrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.button {
+	padding: 30px 60px;
+}
