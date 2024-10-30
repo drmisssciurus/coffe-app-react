@@ -1,5 +1,6 @@
-// import styles from './CoffeShops.module.scss';
+import styles from './CoffeShops.module.scss';
 import CoffeShop from '../CoffeShop/CoffeShop';
+import { useState } from 'react';
 
 const coffeShopContent = [
 	{
@@ -41,16 +42,26 @@ const coffeShopContent = [
 ];
 
 function CoffeShops() {
+	const [activeTab, setActiveTab] = useState(coffeShopContent.length - 1);
+
+	const handleOpenTab = (i) => {
+		setActiveTab(i);
+	}
+
 	return (
-		<>
+		<div className={styles.wrapper}>
 			{
 				coffeShopContent.map((item, i) => {
 					return (
-						<CoffeShop key={i} content={item}/>
+						<CoffeShop 
+						pipiska={() => handleOpenTab(i)} 
+						key={i} 
+						content={item}
+						isOpen = {i === activeTab}/>
 					)
 				})
 			}
-		</>
+		</div>
 	)
 }
 

@@ -2,10 +2,12 @@ import PropTypes from 'prop-types';
 import styles from './CoffeShop.module.scss';
 
 
-function CoffeShop({content}) {
+function CoffeShop({content, pipiska, isOpen}) {
 	return (
-		<div >
-			<div className={styles.wrapper}>
+		<div onClick={pipiska}>
+			{
+				isOpen ? 
+				<div className={styles.wrapper}>
 				<div>
 					<img className={styles.image} src={content.image} alt="" />
 				</div>
@@ -21,12 +23,20 @@ function CoffeShop({content}) {
 						<p>Sat-Sun.........{content.weekends}</p>
 					</div>
 					<button className={styles.button}>Contact us</button>
-			</div>
-			</div>
+				</div>
+				</div>
+				:
+				<div>
+					<h1 className={styles.maintitle}>{content.title}</h1>
+				</div>
+
+			}
+			
 
 		</div>
 	)
 }
 
-CoffeShop.propTypes = {content: PropTypes.object};
+CoffeShop.propTypes = {content: PropTypes.object, pipiska: PropTypes.func, isOpen: PropTypes.bool};
+
 export default CoffeShop;

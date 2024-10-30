@@ -1,1 +1,7 @@
 @import "/src/App.scss";
+
+.wrapper {
+	display: flex;
+	align-items: flex-end;
+	flex-direction: row-reverse;
+}
