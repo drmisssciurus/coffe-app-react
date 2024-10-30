@@ -11,10 +11,10 @@ function CoffeShop({content}) {
 				</div>
 				<div className={styles.information}>
 					<div className={styles.infowrapper}>
-						<h1>{content.title}</h1>
-						<a>{content.adress}</a>
-						<a>{content.tel}</a>
-						<a>{content.email}</a>
+						<h1 className={styles.title}>{content.title}</h1>
+						<a className={styles.adress}>{content.adress}</a>
+						<a className={styles.tel}>{content.tel}</a>
+						<a className={styles.email}>{content.email}</a>
 					</div>
 					<div>
 						<p>Mon-Fri..........{content.weekdays}</p>

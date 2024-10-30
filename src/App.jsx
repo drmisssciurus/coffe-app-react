@@ -5,10 +5,10 @@ import PreHeader from './components/PreHeader/PreHeader';
 import Header from './components/Header/Header';
 import Coffe from './components/CoffeCarts/CoffeCarts';
 
-// import HeroSwiper from './components/HeroSwiper/HeroSwiper';
-// import AfterHeader from './components/AfterHeader/AfterHeader';
-// import CoffeShops from './components/CoffeShops/CoffeShops'
-// import Banner from './components/Banner/Banner';
+import HeroSwiper from './components/HeroSwiper/HeroSwiper';
+import AfterHeader from './components/AfterHeader/AfterHeader';
+import CoffeShops from './components/CoffeShops/CoffeShops'
+import Banner from './components/Banner/Banner';
 
 function App() {
 
@@ -16,11 +16,11 @@ function App() {
     <>
       <PreHeader />
 			<Header />
-			<Coffe />
-			{/* <CoffeShops />
 			<HeroSwiper />
 			<AfterHeader />
-			<Banner /> */}
+			<Banner />
+			<CoffeShops />
+			<Coffe />
     </>
   )
 }

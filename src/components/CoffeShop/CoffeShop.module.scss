@@ -4,6 +4,7 @@
 	display: grid;
 	grid-template-columns: 3fr 1fr;
 	gap: 20px;
+	border: 1px solid $color-dark;
 }
 
 .image {
@@ -23,6 +24,26 @@
 	align-items: flex-start;
 }
 
+.title {
+	font-family: "Anton", sans-serif;
+	font-size: 25px;
+	text-transform: uppercase;
+}
+
+.information {
+	font-family: "Space Mono", sans-serif;
+	font-size: 18px;
+}
+
 .button {
-	padding: 30px 60px;
+	padding: 20px 33px;
+	color: $color-light;
+	font-family: "Anton", sans-serif;
+	font-size: 18px;
+	border: none;
+	text-transform: uppercase;
+	background-image: url('/src/assets/button-bg.png');
+	background-position: cover;
+	background-repeat: no-repeat;
+	background-color: $color-second-dark;
 }

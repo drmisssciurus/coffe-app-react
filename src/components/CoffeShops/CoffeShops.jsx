@@ -34,8 +34,8 @@ const coffeShopContent = [
 		adress: 'Van Ostadestraat 135-97',
 		tel: '374650185347',
 		email: 'eth6y@gmail.com',
-		weekdays: '6.45am-3.00pm',
-		weekends: '8.30am-4.00pm',
+		weekdays: '6.45am - 3.00pm',
+		weekends: '8.30am - 4.00pm',
 		image: '/src/assets/coffe-image-4.png'
 	}
 ];
