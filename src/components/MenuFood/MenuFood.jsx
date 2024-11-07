@@ -23,12 +23,12 @@ const foodElements = [
 function MenuFood() {
 	return (
 		<div className={styles.container}>
-			<div>
-				<h2 className={styles.title}>swing by our place we also have food.</h2>
+			<div className={styles.banner}>
+				<h2 className={styles.title}>swing by our place <br/> we also have food.</h2>
 				<img className={styles.image} src={menuFood} alt="" />
 			</div>
-			<div className={styles.wrapper}>
-				<ul>
+			<div className={styles.food}>
+				<ul className={styles.wrapper}>
 					{
 						foodElements.map((item, i) => {
 							return (
@@ -38,8 +38,8 @@ function MenuFood() {
 										key={i}
 									>
 										<div>
-											<h3>{item.title}</h3>
-											<p>{item.deckription}</p>
+											<h3 className={styles.titles}>{item.title}</h3>
+											<p className={styles.deckription}>{item.deckription}</p>
 										</div>
 										<button className={styles.button}>view more</button>
 									</li>

@@ -1,6 +1,89 @@
 @import "/src/App.scss";
 
+.container {
+	display: flex;
+	background-color: $color-bg-light;
+	border-block: 1px solid $color-dark;
+}
+
+.banner {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 50px;
+	width: 45%;
+	border-right: 1px solid $color-dark;
+}
+
 .title {
-	font-size: 30px;
-	color: red;
+	font-family: "Anton", sans-serif;
+	font-size: 70px;
+	text-transform: uppercase;
+	position: relative;
+}
+
+.title::before {
+	content: '';
+	position: absolute;
+	background-image: url('/src/assets/round.svg');
+	width: 324px;
+	height: 92px;
+	right: 166px;
+	bottom: 7px;
+}
+
+.image {
+	width: 315px;
+	height: 237px;
+}
+
+.food {
+	width: 55%;
+}
+
+.wrapper {
+	display: grid;
+	grid-template-rows: repeat(4, 1fr);
+}
+
+.item {
+	padding: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.item:not(:last-child) {
+	border-bottom: 1px solid $color-dark;
+}
+
+.titles {
+	font-family: "Anton", sans-serif;
+	font-size: 35px;
+	text-transform: uppercase;
+}
+
+.deckription {
+	font-family: "Space Mono", sans-serif;
+	font-size: 18px;
+}
+
+.button {
+	background-color: transparent;
+	color: $color-dark;
+	border: none;
+	font-family: "Anton", sans-serif;
+	font-size: 18px;
+	text-transform: uppercase;
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	gap: 5px;
+}
+
+.button::after {
+	content: '';
+	background-image: url('/src/assets/arrow.svg');
+	width: 28px;
+	aspect-ratio: 1;
 }
