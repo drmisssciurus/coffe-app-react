@@ -9,6 +9,7 @@ import AfterHeader from './components/AfterHeader/AfterHeader';
 import CoffeShops from './components/CoffeShops/CoffeShops'
 import Banner from './components/Banner/Banner';
 import MenuFood from './components/MenuFood/MenuFood';
+import Team from './components/Team/Team';
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
 			<CoffeShops />
 			<Coffe />
 			<MenuFood />
+			<Team />
     </>
   )
 }

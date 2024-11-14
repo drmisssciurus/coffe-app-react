@@ -1,0 +1,14 @@
+@import "/src/App.scss";
+
+.title {
+	font-size: 70px;
+	font-family: 'Anton', sans-serif;
+	text-transform: uppercase;
+	padding: 35px 50px;
+}
+
+.wrapper {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	border-block: 1px solid $color-dark;
+}

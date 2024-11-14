@@ -1,5 +1,6 @@
 import CoffeItems from '../CoffeItems/CoffeItems';
 import styles from './CoffeCarts.module.scss'
+
 const coffeItems = [
 	{
 		image: '/src/assets/coffe-arabica.png',

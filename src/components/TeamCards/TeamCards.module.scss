@@ -1,0 +1,27 @@
+@import "/src/App.scss";
+
+
+.wrapper {
+	padding: 30px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.wrapper:not(:last-child) {
+	border-right: 1px solid $color-dark;
+}
+
+.title {
+	font-size: 25px;
+	font-family: 'Anton', sans-serif;
+	line-height: 1.2;
+	text-transform: uppercase;
+}
+
+.description {
+	font-size: 18px;
+	font-family: 'Space Mono', sans-serif;
+	line-height: 1.3;
+
+}
