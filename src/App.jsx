@@ -11,6 +11,7 @@ import PreHeader from "./components/PreHeader/PreHeader";
 // import MenuFood from "./components/MenuFood/MenuFood";
 // import Team from "./components/Team/Team";
 import BlogPost from "./components/BlogPost/BlogPost";
+import BaristaSchool from "./components/BaristaSchool/BaristaSchool";
 
 function App() {
 	return (
@@ -25,6 +26,7 @@ function App() {
 			<MenuFood />
 			<Team /> */}
 			<BlogPost />
+			<BaristaSchool />
 		</>
 	);
 }

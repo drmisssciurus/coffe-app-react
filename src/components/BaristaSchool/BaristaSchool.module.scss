@@ -1,0 +1,41 @@
+@import "/src/App.scss";
+
+.wrapper {
+ display: flex;
+ background-color: $color-green;
+ padding: 120px;
+ gap: 130px;
+}
+
+.descriptionwrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 20px;
+}
+
+.title {
+ font-family: "Anton", sans-serif;
+ font-size: 35px;
+ text-transform: uppercase;
+}
+
+.description {
+ font-family: "Space Mono", sans-serif;
+ font-size: 18px;
+}
+
+.button {
+ padding: 20px 33px;
+ color: $color-light;
+ font-family: "Anton", sans-serif;
+ font-size: 18px;
+ border: none;
+ text-transform: uppercase;
+ background-image: url('/src/assets/button-bg.png');
+ background-position: cover;
+ background-repeat: repeat;
+ background-color: $color-second-dark;
+ margin-top: 20px;
+ max-width: 140px;
+}
