@@ -1,0 +1,24 @@
+@import "/src/App.scss";
+
+.title {
+	min-width: 1920px;
+	font-size: 80px;
+	font-family: "Anton", sans-serif;
+	text-transform: uppercase;
+	padding-left: 50px;
+	padding-block: 40px;
+	border-bottom: 1px solid $color-dark;
+}
+
+.wrapper {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	border-bottom: 1px solid $color-dark;
+}
+
+.item {
+	padding: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
