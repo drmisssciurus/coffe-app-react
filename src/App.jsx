@@ -10,8 +10,9 @@ import PreHeader from "./components/PreHeader/PreHeader";
 // import Banner from "./components/Banner/Banner";
 // import MenuFood from "./components/MenuFood/MenuFood";
 // import Team from "./components/Team/Team";
-import BlogPost from "./components/BlogPost/BlogPost";
-import BaristaSchool from "./components/BaristaSchool/BaristaSchool";
+// import BlogPost from "./components/BlogPost/BlogPost";
+// import BaristaSchool from "./components/BaristaSchool/BaristaSchool";
+import TrustedSupplies from "./components/TrustedSupplies/TrustedSupplies";
 
 function App() {
 	return (
@@ -24,9 +25,10 @@ function App() {
 			<CoffeShops />
 			<Coffe />
 			<MenuFood />
-			<Team /> */}
+			<Team /> 
 			<BlogPost />
-			<BaristaSchool />
+			<BaristaSchool />*/}
+			<TrustedSupplies />
 		</>
 	);
 }
