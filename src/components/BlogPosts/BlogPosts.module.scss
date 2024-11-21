@@ -1,0 +1,48 @@
+@import "/src/App.scss";
+
+.wrapper {
+	display: flex;
+	padding: 45px 224px 45px 45px; 
+	column-gap: 40px;
+	border-left: 1px solid $color-dark;
+}
+
+.wrapper:not(:last-child) {
+	border-bottom: 1px solid $color-dark;
+}
+
+.contentwrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.date {
+	font-family: "Space Mono", sans-serif;
+	font-size: 18px;
+}
+
+.title {
+	font-family: "Anton", sans-serif;
+	font-size: 35px;
+}
+
+.button {
+	background-color: transparent;
+	color: $color-dark;
+	border: none;
+	font-family: "Anton", sans-serif;
+	font-size: 18px;
+	text-transform: uppercase;
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	gap: 5px;
+}
+
+.button::after {
+	content: '';
+	background-image: url('/src/assets/arrow.png');
+	width: 28px;
+	aspect-ratio: 1;
+}

@@ -1,0 +1,48 @@
+@import "/src/App.scss";
+
+.wrapper {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	border-block: 1px solid $color-dark;
+}
+
+.titlewrapper {
+	padding-top: 50px;
+	padding-left: 50px;
+	max-height: 800px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.title {
+	font-size: 70px;
+	font-family: "Anton", sans-serif;
+	text-transform: uppercase;
+
+	display: flex;
+	flex-direction: column;
+	max-width: 450px;
+}
+
+.undertitle {
+	font-size: 70px;
+	font-family: "Anton", sans-serif;
+	text-transform: uppercase;
+	align-self: flex-end;
+	padding-right: 123px;
+}
+
+.button {
+	padding: 20px 33px;
+	color: $color-light;
+	font-family: "Anton", sans-serif;
+	font-size: 18px;
+	border: none;
+	text-transform: uppercase;
+	background-image: url('/src/assets/button-bg.png');
+	background-position: cover;
+	background-repeat: repeat;
+	background-color: $color-second-dark;
+	max-width: 180px;
+}
