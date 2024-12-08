@@ -1,4 +1,4 @@
-@import "/src/App.scss";
+@use "/src/scss/variables" as *;
 
 .title {
 	font-size: 70px;

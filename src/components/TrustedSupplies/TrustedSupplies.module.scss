@@ -1,7 +1,7 @@
-@import "/src/App.scss";
+@use "/src/scss/variables" as *;
 
 .title {
-	min-width: 1920px;
+	max-width: 1920px;
 	font-size: 80px;
 	font-family: "Anton", sans-serif;
 	text-transform: uppercase;

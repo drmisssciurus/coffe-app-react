@@ -16,7 +16,7 @@ const suppliesItems = [
 function FollowUs() {
 	return (
 		<div>
-			<h1 className={styles.title}>our trusted supplies</h1>
+			<h1 className={styles.title}>Follow Us For More</h1>
 			<ul className={styles.wrapper}>
 				{suppliesItems.map((item, i) => {
 					return (

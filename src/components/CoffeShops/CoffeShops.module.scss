@@ -1,7 +1,21 @@
-@import "/src/App.scss";
+@use "/src/scss/variables" as *;
 
 .wrapper {
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+}
+
+.content {
 	display: flex;
 	align-items: flex-end;
-	flex-direction: row-reverse;
+}
+
+.maintitle {
+	font-size: 50px;
+	font-family: "Anton", sans-serif;
+	text-transform: uppercase;
+	writing-mode: vertical-rl;
+	text-orientation: mixed;
+	rotate: 180deg;
+	cursor: pointer;
 }

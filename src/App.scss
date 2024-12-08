@@ -1,3 +1,5 @@
+@use '/src/scss/variables' as *;
+
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
@@ -7,17 +9,11 @@
 	box-sizing: border-box;
 }
 
-$color-dark: #202020;
-$color-second-dark: #1D1D1B;
-$color-yellow: #FBED81;
-$color-green: #C5D6D1;
-$color-light: #FFFFFF;
-$color-bg-light: #FDF1D9;
-
 img {
 	vertical-align: middle;
 	object-fit: cover;
 	object-position: center;
+	width: 100%;
 }
 
 a {
@@ -45,4 +41,36 @@ li {
   font-family: "Space Mono", monospace;
   font-weight: 400;
   font-style: normal;
+}
+
+.heroSwiper {
+  .swiper-button-next{
+    background: url(/src/assets/arrow.svg) no-repeat center center, #FBED81;
+    width: 84px;
+    height: 65px;
+    position: absolute;
+    top: 50%;
+    z-index: 9;
+    right: 0;
+    padding: 20px;
+    background-size: contain;
+    &::after{
+      content: unset;
+    }
+  }
+  .swiper-button-prev{
+    background: url(/src/assets/arrow.svg) no-repeat center center, #FBED81;
+    width: 84px;
+    height: 65px;
+    position: absolute;
+    transform: scaleX(-1);
+    top: 50%;
+    z-index: 9;
+    left: 0;
+    padding: 20px;
+    background-size: contain;
+    &::after{
+      content: unset;
+    }
+  }
 }

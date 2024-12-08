@@ -1,13 +1,10 @@
-import PropTypes from 'prop-types';
-import styles from './CoffeShop.module.scss';
+import PropTypes from "prop-types";
+import styles from "./CoffeShop.module.scss";
 
-
-function CoffeShop({content, pipiska, isOpen}) {
+function CoffeShop({ content }) {
 	return (
-		<div onClick={pipiska}>
-			{
-				isOpen ? 
-				<div className={styles.wrapper}>
+		<div>
+			<div className={styles.wrapper}>
 				<div>
 					<img className={styles.image} src={content.image} alt="" />
 				</div>
@@ -24,19 +21,13 @@ function CoffeShop({content, pipiska, isOpen}) {
 					</div>
 					<button className={styles.button}>Contact us</button>
 				</div>
-				</div>
-				:
-				<div>
-					<h1 className={styles.maintitle}>{content.title}</h1>
-				</div>
-
-			}
-			
-
+			</div>
 		</div>
-	)
+	);
 }
 
-CoffeShop.propTypes = {content: PropTypes.object, pipiska: PropTypes.func, isOpen: PropTypes.bool};
+CoffeShop.propTypes = {
+	content: PropTypes.object,
+};
 
 export default CoffeShop;

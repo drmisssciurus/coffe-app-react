@@ -1,10 +1,12 @@
-@import "/src/App.scss";
+@use "/src/scss/variables" as *;
 
 .wrapper {
- display: flex;
+ display: grid;
  background-color: $color-green;
  padding: 120px;
  gap: 130px;
+ grid-template-columns: 4fr 1fr;
+ align-items: center;
 }
 
 .descriptionwrapper {
